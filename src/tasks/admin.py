@@ -16,6 +16,7 @@ class CommentInline(admin.TabularInline):
 @admin.register(models.Task)
 class TaskAdminModel(admin.ModelAdmin):
     inlines = [CommentInline]
+    pass
 
 
 @admin.register(models.Comment)
